@@ -1,0 +1,394 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    // width: 1920px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+@mixin flexCenter($justify, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+#navicationBar {
+    // position: fixed;
+    // width: 100%;
+    background-color: white;
+    height: 85px;
+    @include flexCenter(space-between, row);
+
+    .logo {
+        margin-left: 180px;
+
+        p {
+            font-weight: 600;
+            font-size: 24px;
+            letter-spacing: 0.095em;
+            font-style: normal;
+        }
+    }
+
+    .nav {
+        width: 343px;
+        margin-right: 180px;
+        @include flexCenter(space-between, row);
+
+        .selectedNav {
+            background-color: #45B870;
+            border-radius: 16px;
+
+            p {
+                padding: 0px 10px 0px 10px;
+                color: white;
+            }
+        }
+
+        p {
+            min-width: 60px;
+            padding: 15px;
+            text-align: center;
+            letter-spacing: 0.0952em;
+            font-size: 18px;
+        }
+    }
+}
+
+#homeBody {
+    .homeBody_top {
+
+        background-image: url("./homeBody_top_background.png");
+        background-position: center;
+        /* Center the image */
+        background-repeat: no-repeat;
+        /* Do not repeat the image */
+        background-size: cover;
+        background-position: scale(1.5);
+
+        .we_are_here {
+            @include flexCenter(space-between, row);
+            margin: -50px 70px 0px 70px;
+
+            .we_are_here_info {
+                margin-top: 0px;
+                @include flexCenter(center, column);
+                width: 900px;
+
+                .we_are_here_info_message p:first-child {
+                    text-align: center;
+                    font-size: 64px;
+                    font-family: Roboto;
+                    line-height: 75px;
+                    letter-spacing: 0.01em;
+                    text-transform: uppercase;
+                }
+
+                .we_are_here_info_message p:last-child {
+                    text-align: center;
+                    // font-family: Poppins;
+                    font-size: 26px;
+                    font-weight: 400px;
+                    line-height: 39px;
+                    letter-spacing: 0.005em;
+                    margin: 25px 80px 0px 80px;
+                    color: #A2A2A2;
+
+                }
+
+                .we_are_here_info_calculate_bottom {
+                    margin-top: 50px;
+                    background-color: #22D126;
+                    border-radius: 20px;
+
+                    p {
+                        font-size: 30px;
+                        line-height: 45px;
+                        text-align: center;
+                        padding: 5px 20px 5px 20px;
+                    }
+                }
+            }
+        }
+
+        .calculator_design_discription {
+            @include flexCenter(center, row);
+            padding-bottom: 50px;
+
+            .calculator_design_discription_setting_icon {
+                height: 150px;
+                margin-right: 50px;
+            }
+
+            .calculator_design_discription_message {
+                width: 40%;
+
+                p {
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 36px;
+                    line-height: 54px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    color: #A1A1A1;
+                }
+            }
+        }
+    }
+
+    #personalTax {
+        margin-top: 10px;
+        @include flexCenter(center, column);
+
+        .personalTax_individuals {
+            @include flexCenter(center, column);
+
+            .personalTax_individuals_naming {
+                margin: 20px;
+
+                p {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 48px;
+                    line-height: 56px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    color: #009A3A;
+                }
+            }
+
+        }
+
+        .personalTax_couples {
+            @include flexCenter(center, column);
+
+            .personalTax_couples_naming {
+                margin: 20px;
+
+                p {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 48px;
+                    line-height: 56px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    color: #009A3A;
+                }
+            }
+
+        }
+    }
+
+    /* 51Asset 1 1 */
+    .home_contact {
+        @include flexCenter(center, column);
+        margin-top: 100px;
+
+        h3 {
+            font-family: Poppins;
+
+            font-style: normal;
+            font-weight: 500;
+            font-size: 64px;
+            line-height: 36px;
+            /* identical to box height */
+            text-align: center;
+            letter-spacing: 0.095em;
+            margin-bottom: 50px;
+
+        }
+
+        .home_contact_mainPart {
+            width: 100%;
+            @include flexCenter(space-between, row);
+
+            .home_contact_mainPart_left {
+                width: 45%;
+                @include flexCenter(space-between, column);
+
+                // .home_contact_mainPart_left_img {}
+
+                .home_contact_mainPart_left_contact_address {
+                    @include flexCenter(space-between, column);
+
+                    .home_contact_mainPart_left_contact_address_location {
+                        @include flexCenter(space-between, row);
+
+                        p {
+                            margin-left: 20px;
+                        }
+                    }
+
+                    .home_contact_mainPart_left_contact_address_email {
+                        @include flexCenter(space-between, row);
+
+                        P {
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+
+            .home_contact_mainPart_right {
+                width: 45%;
+
+                .home_contact_mainPart_right_form {
+
+                    @include flexCenter(space-between, column);
+
+                    div {
+                        width: 80%;
+                        margin-bottom: 20px;
+
+                        input {
+                            width: 100%;
+                            height: 50px;
+                            background: #F4F4F4;
+                            border-radius: 13px;
+                            border: none;
+                        }
+
+                        textarea {
+                            width: 100%;
+                            height: 150px;
+                            background: #F4F4F4;
+                            border-radius: 13px;
+                            border: none;
+                        }
+
+                        button {
+                            width: 100%;
+                            height: 50px;
+                            background: #1BD51F;
+                            border-radius: 13px;
+                            border: none;
+                            font-family: Poppins;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 24px;
+                            line-height: 36px;
+                            /* identical to box height */
+
+                            text-align: center;
+                            letter-spacing: 0.095em;
+
+                            color: #FFFFFF;
+                            ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#newsletter {
+    background: #F8F9FB;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 20px;
+    @include flexCenter(center, column);
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .newsletter_subscribe_message {
+        p {
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 54px;
+            /* identical to box height */
+
+            text-align: center;
+            letter-spacing: 0.095em;
+
+            color: #1BD51F;
+        }
+    }
+
+    .newsletter_email {
+        @include flexCenter(center, row);
+        width: 500px;
+
+        .newsletter_email_tag {
+            padding-right: 30px;
+
+            p {
+
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 36px;
+                line-height: 54px;
+                /* identical to box height */
+
+                text-align: center;
+                letter-spacing: 0.095em;
+
+                color: #707070;
+            }
+        }
+
+        .newsletter_email_input {
+            width: 300px;
+
+            input {
+                width: 100%;
+                height: 50px;
+                background: #FFFFFF;
+                border: 1px solid #C4C4C4;
+                box-sizing: border-box;
+                border-radius: 15px;
+            }
+        }
+    }
+
+    .newsletter_subscribe_note {
+        p {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 54px;
+            /* identical to box height */
+
+            letter-spacing: 0.095em;
+
+            color: #B0B0B0;
+        }
+    }
+}
+
+#footer {
+    border: 2px solid #ADADAD;
+    width: 100%;
+    box-sizing: border-box;
+
+    .footer_copyright {
+        p {
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 36px;
+            letter-spacing: 0.095em;
+            text-align: center;
+            color: #505050;
+        }
+    }
+}
