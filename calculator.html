@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css_part/main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+</head>
+
+<body>
+    <section id="navicationBar">
+        <div class="logo">
+            <p>TAX CALCULATOR</p>
+        </div>
+        <div class="nav">
+            <div class="nav_home"><a href="#">
+                    <p>HOME</p>
+                </a></div>
+            <div class="nav_calc selectedNav"><a href="#">
+                    <p>CALCULATOR</p>
+                </a></div>
+            <div class="nav_news"><a href="#">
+                    <p>NEWS</p>
+                </a></div>
+        </div>
+    </section>
+
+    <section id="content">
+        <div class="leftcontent">
+            <div class="form">
+                <div class="first">
+                    <!-- <form action=""> -->
+                    <div class="first_marriage">
+                        <p>Marital Status</p>
+                        <select name="status" id="marriage">
+                            <option value="married">Married</option>
+                            <option value="married">Unmarried</option>
+                        </select>
+                    </div>
+                    <div class="first_gender">
+                        <p>Gender</p>
+                        <select name="status" id="marriage">
+                            <option value="married">Male</option>
+                            <option value="married">Female</option>
+                            <option value="married">Other</option>
+                        </select>
+                    </div>
+                    <!-- </form> -->
+                </div>
+
+                <div class="second">
+                    <p>Income</p>
+                    <div class="second_salary">
+                        <div class="second_salary_amount">
+                            <input type="text" id="salary" name="salary" placeholder="Salary">
+                        </div>
+                        <div class="second_salary_time">
+                            <select name="income" id="paid">
+                                <option value="married">Monthly</option>
+                                <option value="married">Yearly</option>
+                                <option value="married">Weekly</option>
+                                <option value="married">Hourly</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="second_festival_bonus">
+                        <input type="text" id="festival" name="bonus" placeholder="Festival Bonus">
+                    </div>
+                    <div class="second_allowance">
+                        <input type="text" id="allowance" name="allow" placeholder="Allowance">
+                    </div>
+                    <div class="second_others_income">
+                        <input type="text" id="others" name="extra" placeholder="Others">
+                    </div>
+                </div>
+
+                <div class="third">
+                    <p>Deducation</p>
+                    <div class="third_provident_funt">
+                        <input type="text" id="provident" name="fund" placeholder="Provident Fund">
+                    </div>
+                    <div class="third_citizen_investment_trust">
+                        <input type="text" id="cit" name="investment" placeholder="Citizen Investment Trust">
+                    </div>
+                    <div class="third_insurance">
+                        <input type="text" id="insurance" name="pay" placeholder="Insurance">
+                    </div>
+                </div>
+
+                <div class="fourth">
+                    <div class="fourth_reset">
+                        <input type="submit" value="RESET">
+                    </div>
+                    <div class="fourth_calculate">
+                        <input type="submit" value="CALCULATE">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rightcontent">
+
+            <div class="first">
+                <div class="up">
+                    <p>ANNUAL GROSS SALARY</p>
+                </div>
+                <div class="down">
+                    <p>0</p>
+                </div>
+            </div>
+
+            <div class="second">
+                <div class="up">
+                    <p>TAXABLE INCOME</p>
+                </div>
+                <div class="down">
+                    <p>0</p>
+                </div>
+            </div>
+
+            <div class="third">
+                <div class="up">
+                    <p>NET PAYABLE TAX</p>
+                </div>
+                <div class="down">
+                    <p>0</p>
+                </div>
+            </div>
+
+            <div class="fourth">
+                <div class="up">
+                    <p>YOUR TAX SLAB IS</p>
+                </div>
+                <div class="down">
+                    <p>0%</p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <section id="footer">
+        <div class="footer_copyright">
+            <p>Copyright &copy; 2021 Tax Calculator</p>
+            
+        </div>
+    </section>
+
+</body>
+
+</html>
