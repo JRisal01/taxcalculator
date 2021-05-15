@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Quando&display=swap");
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  background: #ffffff;
+  font-family: 'Poppins';
+  margin: 0;
+}
+
+#navicationBar {
+  background-color: #ffffff;
+  height: 85px;
+  border-radius: 2px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 1px solid black;
+}
+
+#navicationBar .logo {
+  margin-left: 180px;
+}
+
+#navicationBar .logo p {
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 0.095em;
+  font-style: normal;
+}
+
+#navicationBar .nav {
+  width: 343px;
+  margin-right: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#navicationBar .nav .selectedNav {
+  background-color: #45B870;
+  border-radius: 16px;
+}
+
+#navicationBar .nav .selectedNav p {
+  padding: 0px 10px 0px 10px;
+  color: white;
+}
+
+#navicationBar .nav p {
+  min-width: 60px;
+  padding: 15px;
+  text-align: center;
+  letter-spacing: 0.0952em;
+  font-size: 18px;
+}
+
+.newspart {
+  width: 90%;
+  margin: auto;
+}
+
+.newspart .news-heading {
+  font-size: 1.5rem;
+  font-family: 'Quando', serif;
+  color: #1a2a3b;
+  text-align: center;
+}
+
+.newspart .news-content img {
+  width: 100%;
+}
+
+.newspart .news-content p {
+  padding-top: 20px;
+  color: #6A6A6A;
+  width: 90%;
+  margin: auto;
+  font-size: 1.3rem;
+}
+/*# sourceMappingURL=newstamplate.css.map */
