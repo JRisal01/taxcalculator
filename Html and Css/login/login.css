@@ -1,0 +1,213 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+.waveimage {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+.wapper {
+  width: 100vw;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 7rem;
+  padding: 0 2rem;
+}
+
+.wapper .imgae {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wapper .imgae img {
+  width: 500px;
+}
+
+.wapper .logincontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.wapper .logincontainer form {
+  width: 360px;
+}
+
+.wapper .logincontainer img {
+  height: 100px;
+}
+
+.wapper .logincontainer h2 {
+  margin: 15px 0;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 2.9rem;
+}
+
+.wapper .logincontainer .input-division {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 7% 93%;
+      grid-template-columns: 7% 93%;
+  margin: 25px 0;
+  padding: 5px 0;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.wapper .logincontainer .input-division div {
+  position: relative;
+  height: 45px;
+}
+
+.wapper .logincontainer .input-division div input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.5rem 0.7rem;
+  font-size: 1.2rem;
+  color: #555;
+  font-family: 'poppins', sans-serif;
+}
+
+.wapper .logincontainer .input-division h5 {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #999;
+  font-size: 18px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.wapper .logincontainer .input-division .input-division:before {
+  right: 50%;
+}
+
+.wapper .logincontainer .input-division .input-division:after {
+  left: 50%;
+}
+
+.wapper .logincontainer .input-division.one {
+  margin-top: 0;
+}
+
+.wapper .logincontainer .input-division:before, .wapper .logincontainer .input-division:after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #38d39f;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.wapper .logincontainer .font {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wapper .logincontainer .font i {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.wapper .logincontainer .input-division.focus:before, .wapper .logincontainer .input-division.focus:after {
+  width: 50%;
+}
+
+.wapper .logincontainer .input-division.focus div h5 {
+  top: -5px;
+  font-size: 15px;
+}
+
+.wapper .logincontainer .input-division.focus .font i {
+  color: #38d39f;
+}
+
+.wapper .logincontainer .input-division.pass {
+  margin-bottom: 4px;
+}
+
+.wapper .logincontainer a {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  color: #999;
+  font-size: 0.9rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.wapper .logincontainer a:hover {
+  color: #38d39f;
+}
+
+.wapper .logincontainer .button {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#32be8f), color-stop(#38d39f), to(#32be8f));
+  background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+  background-size: 200%;
+  font-size: 1.2rem;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.wapper .logincontainer .button:hover {
+  background-position: right;
+}
+/*# sourceMappingURL=login.css.map */
