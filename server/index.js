@@ -120,9 +120,13 @@ app.post("/api/news", (req, res) => {
     console.log(newsHeading);
     console.log(newsContent);
 
+    console.log('aaa')
+
     const sqlInsert = "INSERT INTO news (newstitle, newsimage, newscontent) VALUES (?,?,?)"
     database.query(sqlInsert, [newsHeading, sampleFile, newsContent], (err, result) =>{
-        res.send(result)
+       if(err){
+           console.log('error')
+       }
     })
 });
 
